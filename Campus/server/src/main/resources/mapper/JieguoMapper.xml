@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.JieguoMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Jieguo">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="diaochawenjuanid" property="diaochawenjuanid" jdbcType="INTEGER"/>
+                                    <result column="bianhao" property="bianhao" jdbcType="VARCHAR"/>
+                                    <result column="mingcheng" property="mingcheng" jdbcType="VARCHAR"/>
+                                    <result column="faburen" property="faburen" jdbcType="VARCHAR"/>
+                                    <result column="datibianhao" property="datibianhao" jdbcType="VARCHAR"/>
+                                    <result column="shititimu" property="shititimu" jdbcType="VARCHAR"/>
+                                    <result column="leixing" property="leixing" jdbcType="VARCHAR"/>
+                                    <result column="daan" property="daan" jdbcType="VARCHAR"/>
+                                    <result column="defen" property="defen" jdbcType="DECIMAL"/>
+                                    <result column="zimu" property="zimu" jdbcType="VARCHAR"/>
+                                    <result column="datiren" property="datiren" jdbcType="VARCHAR"/>
+                                    <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+                                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, diaochawenjuanid, bianhao, mingcheng, faburen, datibianhao, shititimu, leixing, daan, defen, zimu, datiren, addtime    </sql>
+    </mapper>

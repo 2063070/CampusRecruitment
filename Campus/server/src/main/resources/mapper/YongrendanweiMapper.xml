@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.YongrendanweiMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Yongrendanwei">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="zhanghao" property="zhanghao" jdbcType="VARCHAR"/>
+                                    <result column="mima" property="mima" jdbcType="VARCHAR"/>
+                                    <result column="danweimingcheng" property="danweimingcheng" jdbcType="VARCHAR"/>
+                                    <result column="fuzeren" property="fuzeren" jdbcType="VARCHAR"/>
+                                    <result column="lianxidianhua" property="lianxidianhua" jdbcType="VARCHAR"/>
+                                    <result column="danweidizhi" property="danweidizhi" jdbcType="VARCHAR"/>
+                                    <result column="zizhizhengming" property="zizhizhengming" jdbcType="VARCHAR"/>
+                                    <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+                                    <result column="issh" property="issh" jdbcType="VARCHAR"/>
+                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, zhanghao, mima, danweimingcheng, fuzeren, lianxidianhua, danweidizhi, zizhizhengming, addtime, issh    </sql>
+        <select id="login" resultMap="BaseResultMap" parameterType="com.spring.entity.Yongrendanwei">
+        select
+        <include refid="Base_Column_List"/>
+        from yongrendanwei        where zhanghao = #{zhanghao}
+        AND mima = #{mima}
+    </select>
+    </mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.ZhaopinxinxiMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Zhaopinxinxi">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="bianhao" property="bianhao" jdbcType="VARCHAR"/>
+                                    <result column="biaoti" property="biaoti" jdbcType="VARCHAR"/>
+                                    <result column="tupian" property="tupian" jdbcType="VARCHAR"/>
+                                    <result column="gongzi" property="gongzi" jdbcType="VARCHAR"/>
+                                    <result column="xueli" property="xueli" jdbcType="VARCHAR"/>
+                                    <result column="jingyan" property="jingyan" jdbcType="VARCHAR"/>
+                                    <result column="zhaopinrenshu" property="zhaopinrenshu" jdbcType="INTEGER"/>
+                                    <result column="zhiweileixing" property="zhiweileixing" jdbcType="VARCHAR"/>
+                                    <result column="gongsifuli" property="gongsifuli" jdbcType="VARCHAR"/>
+                                    <result column="zhiweimiaoshu" property="zhiweimiaoshu" jdbcType="VARCHAR"/>
+                                    <result column="gongzuodidian" property="gongzuodidian" jdbcType="VARCHAR"/>
+                                    <result column="gongsimingcheng" property="gongsimingcheng" jdbcType="VARCHAR"/>
+                                    <result column="gongsijieshao" property="gongsijieshao" jdbcType="VARCHAR"/>
+                                    <result column="faburen" property="faburen" jdbcType="VARCHAR"/>
+                                    <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+                                    <result column="issh" property="issh" jdbcType="VARCHAR"/>
+                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, bianhao, biaoti, tupian, gongzi, xueli, jingyan, zhaopinrenshu, zhiweileixing, gongsifuli, zhiweimiaoshu, gongzuodidian, gongsimingcheng, gongsijieshao, faburen, addtime, issh    </sql>
+    </mapper>

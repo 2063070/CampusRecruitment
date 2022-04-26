@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.MianshitongzhiMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Mianshitongzhi">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="qiuzhishenqingid" property="qiuzhishenqingid" jdbcType="INTEGER"/>
+                                    <result column="zhaopinxinxiid" property="zhaopinxinxiid" jdbcType="INTEGER"/>
+                                    <result column="bianhao" property="bianhao" jdbcType="VARCHAR"/>
+                                    <result column="biaoti" property="biaoti" jdbcType="VARCHAR"/>
+                                    <result column="zhiweileixing" property="zhiweileixing" jdbcType="VARCHAR"/>
+                                    <result column="faburen" property="faburen" jdbcType="VARCHAR"/>
+                                    <result column="shenqingren" property="shenqingren" jdbcType="VARCHAR"/>
+                                    <result column="mianshishijian" property="mianshishijian" jdbcType="VARCHAR"/>
+                                    <result column="mianshididian" property="mianshididian" jdbcType="VARCHAR"/>
+                                    <result column="mianshiyaoqiu" property="mianshiyaoqiu" jdbcType="VARCHAR"/>
+                                    <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+                                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, qiuzhishenqingid, zhaopinxinxiid, bianhao, biaoti, zhiweileixing, faburen, shenqingren, mianshishijian, mianshididian, mianshiyaoqiu, addtime    </sql>
+    </mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.GerenjianliMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Gerenjianli">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="jianlibianhao" property="jianlibianhao" jdbcType="VARCHAR"/>
+                                    <result column="jianlileixing" property="jianlileixing" jdbcType="VARCHAR"/>
+                                    <result column="xingming" property="xingming" jdbcType="VARCHAR"/>
+                                    <result column="xingbie" property="xingbie" jdbcType="VARCHAR"/>
+                                    <result column="nianling" property="nianling" jdbcType="INTEGER"/>
+                                    <result column="dianziyouxiang" property="dianziyouxiang" jdbcType="VARCHAR"/>
+                                    <result column="lianxidianhua" property="lianxidianhua" jdbcType="VARCHAR"/>
+                                    <result column="xueli" property="xueli" jdbcType="VARCHAR"/>
+                                    <result column="biyeyuanxiao" property="biyeyuanxiao" jdbcType="VARCHAR"/>
+                                    <result column="suoxuezhuanye" property="suoxuezhuanye" jdbcType="VARCHAR"/>
+                                    <result column="gongzuojingli" property="gongzuojingli" jdbcType="VARCHAR"/>
+                                    <result column="ziwopingjia" property="ziwopingjia" jdbcType="VARCHAR"/>
+                                    <result column="jianliwenjian" property="jianliwenjian" jdbcType="VARCHAR"/>
+                                    <result column="tianjiaren" property="tianjiaren" jdbcType="VARCHAR"/>
+                                    <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+                                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, jianlibianhao, jianlileixing, xingming, xingbie, nianling, dianziyouxiang, lianxidianhua, xueli, biyeyuanxiao, suoxuezhuanye, gongzuojingli, ziwopingjia, jianliwenjian, tianjiaren, addtime    </sql>
+    </mapper>

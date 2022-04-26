@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.LogsMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Logs">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="module" property="module" jdbcType="VARCHAR"/>
+                                    <result column="operationtype" property="operationtype" jdbcType="VARCHAR"/>
+                                    <result column="operationcontent" property="operationcontent" jdbcType="VARCHAR"/>
+                                    <result column="cx" property="cx" jdbcType="VARCHAR"/>
+                                    <result column="username" property="username" jdbcType="VARCHAR"/>
+                                    <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+                                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, module, operationtype, operationcontent, cx, username, addtime    </sql>
+    </mapper>

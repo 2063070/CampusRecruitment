@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.GaoxiaoguanliyuanMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Gaoxiaoguanliyuan">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="zhanghao" property="zhanghao" jdbcType="VARCHAR"/>
+                                    <result column="mima" property="mima" jdbcType="VARCHAR"/>
+                                    <result column="gaoxiaomingcheng" property="gaoxiaomingcheng" jdbcType="VARCHAR"/>
+                                    <result column="fuzeren" property="fuzeren" jdbcType="VARCHAR"/>
+                                    <result column="lianxidianhua" property="lianxidianhua" jdbcType="VARCHAR"/>
+                                    <result column="gaoxiaodizhi" property="gaoxiaodizhi" jdbcType="VARCHAR"/>
+                                    <result column="gaoxiaotupian" property="gaoxiaotupian" jdbcType="VARCHAR"/>
+                                    <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+                                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, zhanghao, mima, gaoxiaomingcheng, fuzeren, lianxidianhua, gaoxiaodizhi, gaoxiaotupian, addtime    </sql>
+        <select id="login" resultMap="BaseResultMap" parameterType="com.spring.entity.Gaoxiaoguanliyuan">
+        select
+        <include refid="Base_Column_List"/>
+        from gaoxiaoguanliyuan        where zhanghao = #{zhanghao}
+        AND mima = #{mima}
+    </select>
+    </mapper>
